@@ -19,7 +19,7 @@ struct SalaresView: View {
             GeometryReader { geometry in
                 VStack {
                     if salares.isEmpty {
-                        Text("No incomes added yet.")
+                        Text("Доходы пока не добавлены.")
                             .font(.headline)
                             .foregroundColor(.gray)
                             .padding(.top, 50)
@@ -34,7 +34,7 @@ struct SalaresView: View {
                     }
                     Spacer()
                 }
-                .navigationTitle("Your Incomes")
+                .navigationTitle("Ваши доходы")
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
@@ -48,7 +48,7 @@ struct SalaresView: View {
                         Text(salare.month)
                             .font(.headline)
                             .foregroundColor(.blue)
-                        Text("Income: $\(Int(salare.income))")
+                        Text("Доход: $\(Int(salare.income))")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
